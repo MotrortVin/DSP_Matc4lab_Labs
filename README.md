@@ -1,2 +1,2 @@
-# DSP_Matc4lab_Labs
+# DSP_Matlab_Labs
 DSP labs used Matlab.
