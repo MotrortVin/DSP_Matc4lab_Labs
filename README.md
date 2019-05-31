@@ -22,7 +22,6 @@ y = conv(x, h)
 **y =[1 1 2 0 2 2 4 0 -2 -2 -4  1  1  2  0 -1 -1 -2  0 -1 -1 -2]**
 >Discussion:
 So, we can see the convolution function of MATLAB is:y=conv(x, h).
-
 ---
 ##### 1.2	Compute the same output using the overlap-add method of block convolution by partitioning the input into length-5 blocks. 
 ```
@@ -45,9 +44,9 @@ stem(j, y)
 **The Output:**
  
 
-**Discussion:**
-**Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
-When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1.** 
+>Discussion:
+Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
+When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1.
 
 1.3	Introduce appropriate internal states, write the corresponding sample processing algorithm and present the results. 
 (''')
