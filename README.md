@@ -152,9 +152,10 @@ title('输出信号频域曲线')
 >Discussion:
 >In this Lab, the most important thing is that we need to calculate the pole-zero plot of the filter according to the wave we want to filter.
 >According to the figures above, we can see that this filter works very well.
-
-Lab 3 Frequency Resolution
-Use the data in Example 9.1.3 and 9.1.4, draw Fig. 9.1.5-9.1.9, compare the results and discuss the effect of windowing.
+---
+#### Lab 3 Frequency Resolution
+#### Use the data in Example 9.1.3 and 9.1.4, draw Fig. 9.1.5-9.1.9, compare the results and discuss the effect of windowing.
+```
 %DSP_Lab_3.m
 clc,clear
 L0=100;
@@ -300,24 +301,25 @@ plot(w,abs(X_H100));
 axis([0 1 0 50]);
 xlabel('f/fs');
 title('Hamming Window, L=100');
-
-The Output:
+```
+**The Output:**
  
  
  
  
  
 
-Discussion:
+>Discussion:
 As you can see, the result of Lab3 is pretty successful. The figures above is basically the same as which in our picture.
-Lab 4 Digital Filter Design
-This lab involves the design of FIR and IIR filters. You may use the following Matlab functions:
+---
+#### Lab 4 Digital Filter Design
+#### This lab involves the design of FIR and IIR filters. You may use the following Matlab functions:
 filter(), ones(), zeros(), zp2tf(), ceil(), buttap(), real(), poly(), impulse(), hanning(), hamming(),  round(), sin(), freqz(), angle(), abs().
-
-(1) The transfer function of a discrete-time system is
+---
+##### (1) The transfer function of a discrete-time system is
  
-where abcd is equal to the last four digits of your student’s ID number.
-Determine the impulse response and step response of the system.
+##### where abcd is equal to the last four digits of your student’s ID number.Determine the impulse response and step response of the system.
+```
 %DSP_Lab_4.1.m
 clc,clear
 num=[1,0,7,-1,8,0]; %The last four digits are 0,7,1 and 8.
@@ -327,16 +329,17 @@ subplot(2,1,1);
 impz(num,mot,50); 
 subplot(2,1,2); 
 stepz(num,mot,50);
-
-The Output:
+```
+**The Output:**
  
-Discussion:
+>Discussion:
 So, as you can see, this transfer function is build successfully, and the results that Matlab output are also able to prove it. We can see that the output signal is unstable at first, but as time passed, the signal become to be stable.
- (2) Plot the magnitude squared frequency response of 5th-, 10th-, 20th-, and xth-order lowpass Butterworth filter, where
+---
+#####  (2) Plot the magnitude squared frequency response of 5th-, 10th-, 20th-, and xth-order lowpass Butterworth filter, where
 		 
-My class number is that 1603014.
-My student’s ID number is that 516021910718.
+##### My class number is that 1603014.My student’s ID number is that 516021910718.
 x= (1603104+5+1+…+7+1+8) mod 20 =5, so I let x=2.
+```
 %DSP_Lab_4.2.m
 clc,clear
 figure(1)
@@ -392,14 +395,15 @@ grid on
 ylabel('H|f|^2')
 xlabel('f')
 title('2-order');
-The Output:
+```
+**The Output:**
  
-Discussion:
+>Discussion:
 So what we know from this part is that the greater the order of filter is, the faster the waveform decline. Another thing we get from this part is that butter filter is a useful filter. In the future, I think it’s a nice way to make a filter.
-
-(3)	Design an FIR bandstop filter with the following specifications:
+---
+##### (3)	Design an FIR bandstop filter with the following specifications:
  
-Determine and plot   and  .
+Determine and plot h(n) and |H($e^j^ω$)|.
 %DSP_Lab_4.3.m
 clc;
 close all;
