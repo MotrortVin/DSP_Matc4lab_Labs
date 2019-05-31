@@ -6,7 +6,6 @@ Introduction
 The Digital Signal Processing Laboratory is an integral and important component of the course. The laboratory has two basic objectives:
 
 (1) Reinforce concepts from the lecture.
-
 (2) Strengthen your ability to processing signals by using computers.
 
 ### Lab 1 Block Processing Method and Sample Processing Method
