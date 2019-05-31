@@ -1,6 +1,5 @@
 # Digital Signal Processing (B) Lab
 ---
-## DSP labs used Matlab.
 #### Introduction
 #### The Digital Signal Processing Laboratory is an integral and important component of the course. The laboratory has two basic objectives:
 #### (1) Reinforce concepts from the lecture.
@@ -45,7 +44,7 @@ stem(j, y)
  
 
 >Discussion:
-Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
+>Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
 When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1.
 ---
 ##### 1.3	Introduce appropriate internal states, write the corresponding sample processing algorithm and present the results. 
@@ -85,10 +84,11 @@ stem(j, y)
 >Discussion:
 In this part, we need to notice that the N of “x(N)” must be a positive number and it can’t bigger than the number of the numbers in x.
 When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1. 
-Besides, we need to find out the length of x and h, so that we can get the length of y. In this part, we need to make sure that the length of w_0, w_1,w_2 and w_3 is the same with which of y.
- 
-Lab 2 Pole-zero Designs
-Assume a current signal of an 50Hz electrical system is sampled by the frequency of 600Hz. Use pole-zero design method to design a filter to remove all the DC and AC harmonics. Draw the magnitude response and pole-zero plot of the filter. Set the amplitude of the frequency components in the original signal, then draw the time domain curve and spectrum of the signal before and after filtering.
+>Besides, we need to find out the length of x and h, so that we can get the length of y. In this part, we need to make sure that the length of w_0, w_1,w_2 and w_3 is the same with which of y.
+--- 
+#### Lab 2 Pole-zero Designs
+#### Assume a current signal of an 50Hz electrical system is sampled by the frequency of 600Hz. Use pole-zero design method to design a filter to remove all the DC and AC harmonics. Draw the magnitude response and pole-zero plot of the filter. Set the amplitude of the frequency components in the original signal, then draw the time domain curve and spectrum of the signal before and after filtering.
+```
 %DSP_Lab_2.m
 clc,clear
 figure(1);
@@ -146,12 +146,12 @@ subplot(2,2,[2 4]);
 plot(f,Y);
 xlabel('Frequence(Hz)')
 title('输出信号频域曲线')
-
-The Output：
+```
+**The Output：**
      
-Discussion:
-In this Lab, the most important thing is that we need to calculate the pole-zero plot of the filter according to the wave we want to filter.
-According to the figures above, we can see that this filter works very well.
+>Discussion:
+>In this Lab, the most important thing is that we need to calculate the pole-zero plot of the filter according to the wave we want to filter.
+>According to the figures above, we can see that this filter works very well.
 
 Lab 3 Frequency Resolution
 Use the data in Example 9.1.3 and 9.1.4, draw Fig. 9.1.5-9.1.9, compare the results and discuss the effect of windowing.
