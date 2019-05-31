@@ -21,6 +21,7 @@ y = conv(x, h)
 **The Output:**
 **y =[1 1 2 0 2 2 4 0 -2 -2 -4  1  1  2  0 -1 -1 -2  0 -1 -1 -2]**
 
+
 **Discussion:**
 **So, we can see the convolution function of MATLAB is:y=conv(x, h).**
 ---
