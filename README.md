@@ -481,7 +481,7 @@ title('kaiser带阻滤波器的幅频特性');
 xlabel('w/pi');
 ylabel('H|e^j^w|');
 ```
-##The Output:##
+**The Output:**
  
  
 >Discussion:
