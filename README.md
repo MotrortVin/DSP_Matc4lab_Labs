@@ -403,9 +403,8 @@ So what we know from this part is that the greater the order of filter is, the f
 ---
 ##### (3)	Design an FIR bandstop filter with the following specifications:
  
-Determine and plot h(n) and 
-$|H(e^j^ω)|$
-.
+##### Determine and plot h(n) and |H[e^(jω)]|.
+```
 %DSP_Lab_4.3.m
 clc;
 close all;
@@ -481,10 +480,11 @@ plot(k/pi,abs(x));
 title('kaiser带阻滤波器的幅频特性');
 xlabel('w/pi');
 ylabel('H|e^j^w|');
-The Output:
+```
+##The Output:##
  
  
-Discussion:
+>Discussion:
    So we can see that, the result of this lab is very successful. In this part, I choose the Kaiser Window. Although the calculation of this part is hard and confused, the FIR filter that I designed works very well. If you check the figure below, you may find out that the filter match the condition of the Lab very well. What we can tell ourselves is that it’s a successful Lab.
   
 
