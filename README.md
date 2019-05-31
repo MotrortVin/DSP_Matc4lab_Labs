@@ -313,8 +313,7 @@ title('Hamming Window, L=100');
 As you can see, the result of Lab3 is pretty successful. The figures above is basically the same as which in our picture.
 ---
 #### Lab 4 Digital Filter Design
-#### This lab involves the design of FIR and IIR filters. You may use the following Matlab functions:
-filter(), ones(), zeros(), zp2tf(), ceil(), buttap(), real(), poly(), impulse(), hanning(), hamming(),  round(), sin(), freqz(), angle(), abs().
+#### This lab involves the design of FIR and IIR filters. You may use the following Matlab functions:filter(), ones(), zeros(), zp2tf(), ceil(), buttap(), real(), poly(), impulse(), hanning(), hamming(),  round(), sin(), freqz(), angle(), abs().
 ---
 ##### (1) The transfer function of a discrete-time system is
  
