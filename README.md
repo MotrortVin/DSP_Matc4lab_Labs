@@ -20,9 +20,9 @@ y = conv(x, h)
 ```
 **The Output:**
 **y =[1 1 2 0 2 2 4 0 -2 -2 -4  1  1  2  0 -1 -1 -2  0 -1 -1 -2]**
-
-Discussion:
+>Discussion:
 So, we can see the convolution function of MATLAB is:y=conv(x, h).
+
 ---
 ##### 1.2	Compute the same output using the overlap-add method of block convolution by partitioning the input into length-5 blocks. 
 ```
