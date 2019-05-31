@@ -403,7 +403,9 @@ So what we know from this part is that the greater the order of filter is, the f
 ---
 ##### (3)	Design an FIR bandstop filter with the following specifications:
  
-Determine and plot h(n) and |H($e^j^ω$)|.
+Determine and plot h(n) and 
+$|H(e^j^ω)|$
+.
 %DSP_Lab_4.3.m
 clc;
 close all;
