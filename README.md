@@ -1,10 +1,10 @@
 # Digital Signal Processing (B) Lab
 ---
 ## DSP labs used Matlab.
-### Introduction
-### The Digital Signal Processing Laboratory is an integral and important component of the course. The laboratory has two basic objectives:
-### (1) Reinforce concepts from the lecture.
-### (2) Strengthen your ability to processing signals by using computers.
+#### Introduction
+#### The Digital Signal Processing Laboratory is an integral and important component of the course. The laboratory has two basic objectives:
+#### (1) Reinforce concepts from the lecture.
+#### (2) Strengthen your ability to processing signals by using computers.
 ---
 #### Lab 1 Block Processing Method and Sample Processing Method
 #### Let x = [1, 1, 1, 1, 3, 3, 3, 3, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1] be an input to the filter described by the I/O equation: y(n)=x(n)+x(n-2)-2x(n-3)
@@ -12,22 +12,17 @@
 ##### 1.1	Compute the corresponding output signal using convolution function of MATLAB.
 ```
 %DSP_Lab_1.1.m
-
 clc,clear
-
 x = [1 1 1 1 3 3 3 3 1 1 1 2 2 2 2 1 1 1 1];
-
 h = [1 0 1 -2];
-
 fprintf('The Output:');
-
 y = conv(x, h)
 ```
 **The Output:**
 **y =[1 1 2 0 2 2 4 0 -2 -2 -4  1  1  2  0 -1 -1 -2  0 -1 -1 -2]**
 
 **Discussion:**
-So, we can see the convolution function of MATLAB is:y=conv(x, h).
+**So, we can see the convolution function of MATLAB is:y=conv(x, h).**
 ---
 ##### 1.2	Compute the same output using the overlap-add method of block convolution by partitioning the input into length-5 blocks. 
 ```
@@ -47,12 +42,12 @@ j = 0 : 23;
 fprintf('The Output:');
 stem(j, y)
 ```
-The Output:
+**The Output:**
  
 
-Discussion:
-Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
-When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1. 
+**Discussion:**
+**Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
+When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1.** 
 
 1.3	Introduce appropriate internal states, write the corresponding sample processing algorithm and present the results. 
 (''')
