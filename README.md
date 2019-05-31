@@ -149,9 +149,9 @@ title('输出信号频域曲线')
 ```
 **The Output：**
 
-![Graph3](Output/2.1.png "2.1")
-![Graph4](Output/2.2.png "2.2")
-![Graph5](Output/2.3.png "2.3")
+![Graph3](Output/2.1.jpg "2.1")
+![Graph4](Output/2.2.jpg "2.2")
+![Graph5](Output/2.3.jpg "2.3")
 >Discussion:
 >In this Lab, the most important thing is that we need to calculate the pole-zero plot of the filter according to the wave we want to filter.
 >According to the figures above, we can see that this filter works very well.
@@ -307,11 +307,11 @@ title('Hamming Window, L=100');
 ```
 **The Output:**
  
-![Graph6](Output/3.1.png "3.1")
-![Graph7](Output/3.2.png "3.2")
-![Graph8](Output/3.3.png "3.3")
-![Graph9](Output/3.4.png "3.4")
-![Graph10](Output/3.5.png "3.5")
+![Graph6](Output/3.1.jpg "3.1")
+![Graph7](Output/3.2.jpg "3.2")
+![Graph8](Output/3.3.jpg "3.3")
+![Graph9](Output/3.4.jpg "3.4")
+![Graph10](Output/3.5.jpg "3.5")
 >Discussion:
 As you can see, the result of Lab3 is pretty successful. The figures above is basically the same as which in our picture.
 ---
@@ -334,7 +334,7 @@ stepz(num,mot,50);
 ```
 **The Output:**
 
-![Graph11](Output/4.1.png "4.1")
+![Graph11](Output/4.1.jpg "4.1")
 >Discussion:
 So, as you can see, this transfer function is build successfully, and the results that Matlab output are also able to prove it. We can see that the output signal is unstable at first, but as time passed, the signal become to be stable.
 ---
@@ -401,7 +401,7 @@ title('2-order');
 ```
 **The Output:**
 
-![Graph12](Output/4.2.png "4.2")
+![Graph12](Output/4.2.jpg "4.2")
 >Discussion:
 So what we know from this part is that the greater the order of filter is, the faster the waveform decline. Another thing we get from this part is that butter filter is a useful filter. In the future, I think it’s a nice way to make a filter.
 ---
@@ -487,8 +487,8 @@ ylabel('H|e^j^w|');
 ```
 **The Output:**
  
-![Graph12](Output/4.3.1.png "4.3.1")
-![Graph13](Output/4.3.2.png "4.3.2")
+![Graph12](Output/4.3.1.jpg "4.3.1")
+![Graph13](Output/4.3.2.jpg "4.3.2")
 >Discussion:
    So we can see that, the result of this lab is very successful. In this part, I choose the Kaiser Window. Although the calculation of this part is hard and confused, the FIR filter that I designed works very well. If you check the figure below, you may find out that the filter match the condition of the Lab very well. What we can tell ourselves is that it’s a successful Lab.
   
