@@ -41,6 +41,7 @@ fprintf('The Output:');
 stem(j, y)
 ```
 **The Output:**
+
 ![Graph1](Output/1.2.png "1.2")
 >Discussion:
 >Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
@@ -79,7 +80,7 @@ stem(j, y)
 ```
 **The Output:**
  
-
+![Graph2](Output/1.3.png "1.3")
 >Discussion:
 In this part, we need to notice that the N of “x(N)” must be a positive number and it can’t bigger than the number of the numbers in x.
 When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1. 
@@ -147,7 +148,10 @@ xlabel('Frequence(Hz)')
 title('输出信号频域曲线')
 ```
 **The Output：**
-     
+
+![Graph3](Output/2.1.png "2.1")
+![Graph4](Output/2.2.png "2.2")
+![Graph5](Output/2.3.png "2.3")
 >Discussion:
 >In this Lab, the most important thing is that we need to calculate the pole-zero plot of the filter according to the wave we want to filter.
 >According to the figures above, we can see that this filter works very well.
@@ -303,11 +307,11 @@ title('Hamming Window, L=100');
 ```
 **The Output:**
  
- 
- 
- 
- 
-
+![Graph6](Output/3.1.png "3.1")
+![Graph7](Output/3.2.png "3.2")
+![Graph8](Output/3.3.png "3.3")
+![Graph9](Output/3.4.png "3.4")
+![Graph10](Output/3.5.png "3.5")
 >Discussion:
 As you can see, the result of Lab3 is pretty successful. The figures above is basically the same as which in our picture.
 ---
@@ -315,7 +319,7 @@ As you can see, the result of Lab3 is pretty successful. The figures above is ba
 #### This lab involves the design of FIR and IIR filters. You may use the following Matlab functions:filter(), ones(), zeros(), zp2tf(), ceil(), buttap(), real(), poly(), impulse(), hanning(), hamming(),  round(), sin(), freqz(), angle(), abs().
 ---
 ##### (1) The transfer function of a discrete-time system is
- 
+![image text](Output/4.1.0.png "The TransFer Function") 
 ##### where abcd is equal to the last four digits of your student’s ID number.Determine the impulse response and step response of the system.
 ```
 %DSP_Lab_4.1.m
@@ -329,14 +333,15 @@ subplot(2,1,2);
 stepz(num,mot,50);
 ```
 **The Output:**
- 
+
+![Graph11](Output/4.1.png "4.1")
 >Discussion:
 So, as you can see, this transfer function is build successfully, and the results that Matlab output are also able to prove it. We can see that the output signal is unstable at first, but as time passed, the signal become to be stable.
 ---
 #####  (2) Plot the magnitude squared frequency response of 5th-, 10th-, 20th-, and xth-order lowpass Butterworth filter, where
-		 
+![image text](Output/4.2.0.png) 		 
 ##### My class number is that 1603014.My student’s ID number is that 516021910718.
-x= (1603104+5+1+…+7+1+8) mod 20 =5, so I let x=2.
+##### x= (1603104+5+1+…+7+1+8) mod 20 =5, so I let x=2.
 ```
 %DSP_Lab_4.2.m
 clc,clear
@@ -395,12 +400,13 @@ xlabel('f')
 title('2-order');
 ```
 **The Output:**
- 
+
+![Graph12](Output/4.2.png "4.2")
 >Discussion:
 So what we know from this part is that the greater the order of filter is, the faster the waveform decline. Another thing we get from this part is that butter filter is a useful filter. In the future, I think it’s a nice way to make a filter.
 ---
 ##### (3)	Design an FIR bandstop filter with the following specifications:
- 
+![image text](Output/4.3.0.png "The Specifications")  
 ##### Determine and plot h(n) and |H[e^(jω)]|.
 ```
 %DSP_Lab_4.3.m
@@ -481,7 +487,8 @@ ylabel('H|e^j^w|');
 ```
 **The Output:**
  
- 
+![Graph12](Output/4.3.1.png "4.3.1")
+![Graph13](Output/4.3.2.png "4.3.2")
 >Discussion:
    So we can see that, the result of this lab is very successful. In this part, I choose the Kaiser Window. Although the calculation of this part is hard and confused, the FIR filter that I designed works very well. If you check the figure below, you may find out that the filter match the condition of the Lab very well. What we can tell ourselves is that it’s a successful Lab.
   
