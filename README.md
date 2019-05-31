@@ -82,7 +82,7 @@ stem(j, y)
  
 ![Graph2](Output/1.3.png "1.3")
 >Discussion:
-In this part, we need to notice that the N of “x(N)” must be a positive number and it can’t bigger than the number of the numbers in x.
+In this part, we need to notice that the N of “x(N)” must be a positive number and it can’t be bigger than the number of the numbers in x.
 When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1. 
 >Besides, we need to find out the length of x and h, so that we can get the length of y. In this part, we need to make sure that the length of w_0, w_1,w_2 and w_3 is the same with which of y.
 --- 
