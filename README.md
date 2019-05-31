@@ -9,13 +9,14 @@ The Digital Signal Processing Laboratory is an integral and important component 
 Lab 1 Block Processing Method and Sample Processing Method
 Let x = [1, 1, 1, 1, 3, 3, 3, 3, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1] be an input to the filter described by the I/O equation: y(n)=x(n)+x(n-2)-2x(n-3)
 1.1	Compute the corresponding output signal using convolution function of MATLAB.
+(```)
 %DSP_Lab_1.1.m
 clc,clear
 x = [1 1 1 1 3 3 3 3 1 1 1 2 2 2 2 1 1 1 1];
 h = [1 0 1 -2];
 fprintf('The Output:');
 y = conv(x, h)
-
+(```)
 The Output:
 y =[1 1 2 0 2 2 4 0 -2 -2 -4  1  1  2  0 -1 -1 -2  0 -1 -1 -2]
 
