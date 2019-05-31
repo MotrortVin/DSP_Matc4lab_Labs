@@ -41,8 +41,7 @@ fprintf('The Output:');
 stem(j, y)
 ```
 **The Output:**
- 
-
+![Graph1](Output/1.2.png "1.2")
 >Discussion:
 >Because we need to using the overlap-add method of block convolution by partitioning the input into length-5 blocks and there are only 19 numbers in x, we need to put a ‘0’ in the end as the twentieth number of x. 
 When forming the figure, we need to make sure that ‘j’ is matched with y, which means if there are N numbers in y, then the maximum of j must be N-1.
